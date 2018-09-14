@@ -10,6 +10,14 @@ namespace Revision
     {
         static void Main(string[] args)
         {
+            MaFerrari = new Voiture;
+            MaFerrariDemmare = Voiture + Contact;
+            MaFerrariRoule = Voiture + Contact + Vitesse;
+        }
+        static string Voiture()
+        {
+            Console.WriteLine("Je test ma nouvelle Ferrari !");
+            Console.ReadKey();
         }
     }
-}
+}   
