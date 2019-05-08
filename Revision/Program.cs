@@ -22,10 +22,9 @@ namespace Revision
     {
         static Voiture()
         {
-            string sDemmarer = new Contact, // a corriger
-                   sRouler = new Avance, // a corriger
-                   sAcceler = new Gaz, // a corriger
-                   sClee = "voulez vous mettre la clée dans le contact, Oui ou Non ?";
+            var sAcceler = new Gaz();
+
+            string sClee = "voulez vous mettre la clée dans le contact, Oui ou Non ?";
 
             Console.WriteLine($"{sClee}");
             bool bClee = Convert.ToBoolean(Console.ReadLine());
@@ -34,7 +33,6 @@ namespace Revision
             {
                 Console.WriteLine("Parfait, mettez la clee dans le contact pour démarrer");
                 new Contact();
-                return ;
             }
         }
 
@@ -43,7 +41,13 @@ namespace Revision
     {
         static Contact()
         {
-            blabla
+            var sDemmarer = new Contact();
+            if (Convert.ToBoolean(sDemmarer))
+            {
+                Console.WriteLine("bruit du demareur");
+                Console.WriteLine("On avance ?");
+                var sRouler = new Avance(); // à remettrte pouir plus tard....
+            }
         }
     }
     class Avance
