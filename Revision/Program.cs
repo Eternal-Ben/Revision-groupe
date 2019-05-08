@@ -22,7 +22,6 @@ namespace Revision
     {
         static Voiture()
         {
-            var sAcceler = new Gaz();
 
             string sClee = "voulez vous mettre la clée dans le contact, Oui ou Non ?";
 
@@ -45,7 +44,6 @@ namespace Revision
             if (Convert.ToBoolean(sDemmarer))
             {
                 Console.WriteLine("bruit du demareur");
-                Console.WriteLine("On avance ?");
                 var sRouler = new Avance(); // à remettrte pouir plus tard....
             }
         }
@@ -54,14 +52,16 @@ namespace Revision
     {
         static Avance()
         {
-            bazlbazlba
+ //           var sAcceler = new Gaz();
+            var sAcceler= new Gaz();
+            Console.WriteLine("On avance ?");
+            Convert.ToBoolean(Console.ReadLine());
         }
     }
     class Gaz
     {
         static Gaz()
         {
-            blzalbal
         }
     }
 }
